@@ -1,0 +1,41 @@
+.copy_field {
+  gap: 12px;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #fafaff;
+
+  .value {
+    flex: 1;
+    color: #999;
+    font-size: 16px;
+    overflow: hidden;
+    border-radius: 5px;
+    align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+  }
+
+  .copy_button {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0px 12px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: var(--primary-color-bg);
+  }
+
+  .copy_button:hover {
+    background-color: var(--primary-color-bg-hover);
+  }
+  
+  .copy_button:active {
+    background-color: var(--primary-color-bg-active);
+  }
+}

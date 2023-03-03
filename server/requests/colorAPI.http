@@ -1,0 +1,35 @@
+@cookie=connect.sid=s%3ABHXjCcfjimMtLftwPjoqC9l6IGfg0ObJ.3zYF%2BlAuX1jI%2BgNGVjuuH46mFypKl9oKLVPEM5OHJfo; Path=/; HttpOnly
+
+###Color list
+GET http://192.168.100.6:4000/color/list
+cookie: @{{cookie}}
+
+###Add color
+POST http://192.168.100.6:4000/color/add
+Content-Type: application/json
+cookie: {{cookie}}
+
+{
+  "color": {
+    "name": "color 1",
+    "range": [[0, 100, 50], [50, 100, 50]]
+  }
+}
+
+###Delete color
+POST http://192.168.100.6:4000/color/delete
+Content-Type: application/json
+cookie: {{cookie}}
+
+{
+  "colorId": "6286e3c36cb3a7cff377a798"
+}
+
+###What is this color
+GET http://192.168.100.6:4000/color/6286e795d734743efd63fc5f?whatiscolor=[55,2,3]
+
+###Get file
+GET http://192.168.100.6:4000/color/file
+
+###Get api data
+GET http://192.168.100.6:4000/color/apiData

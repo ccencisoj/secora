@@ -1,0 +1,35 @@
+.color_range1 {
+  width: 400px;
+  height: 80px;
+
+  .color_bar {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+
+    .opacity_left {
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #fffe;
+    }
+
+    .opacity_right {
+      top: 0px;
+      right: 0px;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: #fffe;
+    }
+  }
+
+  .range_bar {
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+}

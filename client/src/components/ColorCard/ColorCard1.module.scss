@@ -1,0 +1,57 @@
+.color_card {
+  width: 100%;
+  max-height: 500px;
+  margin-bottom: 12px;
+  
+  .wrapper {
+    width: 100%;
+    padding: 24px 24px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+    
+    .header {
+      width: 100%;
+      display: flex;
+      margin-bottom: 12px;
+      align-items: center;
+      justify-content: space-between;
+  
+      .name {
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  
+    .color_range {
+      width: 100%;
+      height: 70px;
+    }
+  }
+}
+
+.deleted {
+  animation: a_color_card 300ms ease 300ms 1 forwards;
+
+  .wrapper {
+    opacity: 1;
+    transform: translateY(0px);
+    animation: a_wrapper 300ms ease 0s 1 forwards;
+  }
+}
+
+@keyframes a_color_card {
+  to {
+    max-height: 0px;
+    margin-bottom: 0px;
+    visibility: hidden;
+  }
+}
+
+@keyframes a_wrapper {
+  to {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+}

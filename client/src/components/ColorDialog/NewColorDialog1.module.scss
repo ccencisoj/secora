@@ -1,0 +1,55 @@
+.new_color_dialog {
+  gap: 12px;
+  width: 350px;
+  display: flex;
+  padding: 12px 12px;
+  border-radius: 5px;
+  transition: all 300ms;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #fff;
+
+  .header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .form {
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+  
+      .title {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+    }
+  
+    .footer {
+      gap: 8px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+}

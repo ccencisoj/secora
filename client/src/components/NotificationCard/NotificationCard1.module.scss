@@ -1,0 +1,76 @@
+.notification_card {
+  --animation-time: 500ms;
+  --height: 50px;
+  gap: 4px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  font-size: 18px;
+  height: var(--height);
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  
+  .label {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .value {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.animation_step_one {
+  animation: a_animation_step_one var(--animation-time) ease 1 forwards;
+}
+
+@keyframes a_animation_step_one {
+  from {
+    opacity: 0;
+    transform: translateY(calc(3*var(--height))) scale(0.8);
+  }    
+  to {
+    opacity: 1;
+    transform: translateY(calc(2*var(--height))) scale(1);
+  }
+}
+
+.animation_step_two {
+  animation: a_animation_step_two var(--animation-time) ease 1 forwards;
+}
+
+@keyframes a_animation_step_two {
+  from {
+    opacity: 1;
+    transform: translateY(calc(2*var(--height))) scale(1);
+  }    
+  to {
+    opacity: 0.5;
+    transform: translateY(calc(1*var(--height))) scale(0.8);
+  }
+}
+
+.animation_step_three {
+  animation: a_animation_step_three var(--animation-time) ease 1 forwards;
+}
+
+@keyframes a_animation_step_three {
+  from {
+    opacity: 0.5;
+    transform: translateY(calc(1*var(--height))) scale(0.8);
+  }    
+  to {
+    opacity: 0;
+    transform: translateY(calc(0*var(--height))) scale(0.5);
+  }
+}
+
+.animation_step_four {
+  visibility: hidden;
+}

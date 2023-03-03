@@ -1,0 +1,35 @@
+.close_button {
+  top: 8px;
+  right: 8px;
+  z-index: 100;
+  display: flex;
+  border-radius: 2px;
+  padding: 3px 3px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafaff;
+
+  .icon {
+    color: #999;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+  }
+}
+
+.close_button:hover {
+  background-color: #f1f1ff;
+
+  .icon {
+    color: #000;
+  }
+}
+
+.close_button:active {
+  background-color: #fafaff;
+
+  .icon {
+    color: #999;
+  }
+}

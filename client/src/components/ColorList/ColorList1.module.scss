@@ -1,0 +1,47 @@
+.color_list {
+  width: 100%;
+  
+  .items {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .sentence {
+    gap: 4px;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+.visible_items {
+  .items {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms 0s;
+  }
+
+  .sentence {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0s;
+  }
+}
+
+.hidden_items {
+  .items {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 300ms 0ms;
+  }
+
+  .sentence {
+    opacity: 1;
+    visibility: visible;
+    transition: all 300ms 500ms;
+  }
+}

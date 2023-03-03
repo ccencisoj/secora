@@ -1,0 +1,25 @@
+.nav_primary {
+  width: 100%;
+  height: var(--nav-height);
+  display: flex;
+  padding: 0px 2vw;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.04);
+
+  .left_side {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .right_side {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}

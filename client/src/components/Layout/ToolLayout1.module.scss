@@ -1,0 +1,31 @@
+.tool_layout {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+
+  .notifications {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+  }
+
+  .color_list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .color {
+      width: 100%;
+      height: 25vh;
+    }
+  }
+
+  .color_panel {
+    bottom: 24px;
+    position: fixed;
+  }
+}

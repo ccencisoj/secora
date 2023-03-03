@@ -1,0 +1,103 @@
+.color_list_layout {
+  width: 100vw;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+
+  .nav {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 1000;
+    position: sticky;
+  }
+
+  .main {
+    width: 80%;
+    display: flex;
+    padding-top: 8vh;
+    padding-bottom: 10vh;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    .title {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+    
+    .row {
+      gap: 32px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+
+      .color_list {
+        width: 68%;
+      }
+  
+      .color_actions {
+        gap: 12px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media Only screen and (max-width: 1250px) {
+  .color_list_layout {
+    .main {
+      .row {
+        .color_list {
+          width: 60%;
+        }
+        .color_actions {
+          width: 40%;
+        }
+      }
+    }
+  }  
+}
+
+@media Only screen and (max-width: 1100px) {
+  .color_list_layout {
+    .main {
+      width: 95%;
+    }
+  }  
+}
+
+@media Only screen and (max-width: 950px) {
+  .color_list_layout {
+    .main {
+      width: 90%;
+      
+      .row {
+        flex-direction: column-reverse;
+
+        .color_list {
+          width: 100%;
+        }
+
+        .color_actions {
+          width: 100%;
+        }
+      }
+    }
+  }  
+}
+
+@media Only screen and (max-width: 650px) {
+  .color_list_layout {
+    .main {
+      width: 90%;
+      padding-top: 5vh;
+
+      .title {
+        font-size: 24px;
+      }
+    }
+  }  
+}

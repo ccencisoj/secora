@@ -1,0 +1,16 @@
+.notification_list {
+  top: -50px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  transition: 500ms;
+  flex-direction: column;
+}
+
+.hidden_notification_list {
+  opacity: 0;
+}
+
+.visible_notification_list {
+  opacity: 1;
+}
